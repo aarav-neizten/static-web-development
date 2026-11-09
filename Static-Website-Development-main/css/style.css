@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+
+/* styling the body */
+
+body{
+    background: #222222;
+}
+
+/* navbar and the header styling */
+
+.navbar{
+    height: 70px;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 16px;
+    padding-top: 0px;
+}
+
+/* navigation buttons styling */
+
+.navbar nav ul li{
+    display: inline-block;
+}
+
+
+.navbar nav ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease;
+    color: white;
+}
+
+/* hover effect on the navigation buttons */
+
+.navbar nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* styling the search bar */
+
+.search-d{
+    display: flex;
+    gap: 0px;
+}
+
+.search{
+    width: 400px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* search bar button */
+
+.search-btn{
+    padding: 3px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+/* hover effect on the search button */
+
+.search-btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 0px rgba(255,255,255,0.4);
+}
+
+/* styling the main content of the page */
+/* styling the section to center it */
+
+.maincont{
+    height: 800px;
+    padding: 150px;
+    padding-right: 50px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* main heading styling */
+
+.maindesc h1{
+    font-size: 150px;
+    color: white;
+}
+
+/* description about the page styling */
+
+.maindesc p{
+    font-size: 25px;
+    width: 900px;
+    color: white;
+}
+
+/* shop now button styling */
+
+.maindesc a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease;
+    color: white;
+    border: 1px solid;
+}
+
+/* hover effect on the shop now button */
+
+.maindesc a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 0px rgba(255,255,255,0.4);
+}
+
+/* right side of the section */
+
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+}
+
+/* browse our pages styling */
+
+.pages h1{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+
+}
+
+.browse-table a{
+    text-decoration: none;
+
+}
+
+.card{
+    box-shadow: 1px 1px 10px rgba(255,255,255,0.1);
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    transition: 0.4s ease;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgba(255,255,255,0.3);
+}
+
+.card h2{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+/* procduct section styling */
+
+.product-sec{
+    height: 840px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: column;
+    padding: 100px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.header-home h1{
+    font-size: 50px;
+    color: white;
+}
+
+.product-main{
+    width: 1500px;
+    height: 550px;
+    background-color: #313131;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.main-content{
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+
+.main-content:hover{
+    box-shadow: 0px 0px 10px 2px rgba(255,255,255,0.3);
+    transform: scale(1.03);
+}
+
+.main-content img{
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.main-content p{
+    color: white;
+}
+
+.main-content a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s ease;
+    color: white;
+    border: 1px solid;
+    margin-top: 10px;
+}
+
+.main-content a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px rgba(255,255,255,0.4);
+}
+
+.allpros{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s ease;
+    color: white;
+    border: 1px solid;
+    margin-top: 50px;
+}
+
+.allpros:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 3px 3px rgba(255,255,255,0.4);
+}
+
+.foot{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    padding-bottom: 5px;
+}

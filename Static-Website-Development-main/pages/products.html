@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Printer</title>
+  <link rel="stylesheet" href="../css/products.css" />
+  <link rel="icon" href="../images/icon-logo2.png">
+  <style>
+    .resetbtn {
+      background-color: transparent;
+      border: 1px solid grey;
+      padding: 5px 10px;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar and the header section  -->
+  <header>
+    <div class="navbar">
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="logo.png" width="100px" />
+          </a>
+        </div>
+        <!-- Search bar -->
+        <div class="search-d">
+          <input type="text" id="search" class="search" placeholder="Search..." />
+          <button type="button" id="search-btn" class="search-btn" onclick="">
+            Search
+          </button>
+        </div>
+        <!-- Navigation bar -->
+        <div class="centercont">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a href="#" style="background-color: white; color: black">Products</a>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="feedback.html">About Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- The main Products Page -->
+  <!-- Table is used to format the page -->
+  <section class="maincont" id="maincontent">
+    <table class="main-table">
+      <tr class="frow">
+        <th colspan="4">
+          <h1>Our Products</h1>
+        </th>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <div class="filter-sel">
+            <select name="filter" id="filter">
+              <option value="filter" selected disabled hidden>
+                Filter From:
+              </option>
+              <option value="none">None</option>
+              <option value="inkjet">Inkjet Printers</option>
+              <option value="laser">Laser Printers</option>
+            </select>
+
+            <button class="applybtn" id="apply" onclick="filter()">Apply</button>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/DCP.jpg" alt="Product Image" width="250px" height="250px" id="mainimg1" />
+            <div class="subimg">
+              <button class="subimg-btn" id="subimg1">
+                <img src="../images/Printer/DCP.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="subimg2">
+                <img src="../images/Printer/DCP2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="subimg3">
+                <img src="../images/Printer/DCP3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p><b>Brother DCP L2540DW Laser Printer</b></p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 34,999.00</del></p>
+            <p>Offer Price: NPR 31,999.00</p>
+
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/t820DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg2" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub2img1">
+                <img src="../images/Printer/t820DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img2">
+                <img src="../images/Printer/t820DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img3">
+                <img src="../images/Printer/t820DW3.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img4">
+                <img src="../images/Printer/t820DW4.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T820DW 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 50,999.00</del></p>
+            <p>Offer Price: NPR 47,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/T420W.jpg" alt="Product Image" width="250px" height="250px" id="mainimg3" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub3img1">
+                <img src="../images/Printer/T420W.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub3img2">
+                <img src="../images/Printer/T420W2.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T420W 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 25,999.00</del></p>
+            <p>Offer Price: NPR 23,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/T720DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg4" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub4img1">
+                <img src="../images/Printer/T720DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub4img2">
+                <img src="../images/Printer/T720DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub4img3">
+                <img src="../images/Printer/T720DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T720DW 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 39,200.00</del></p>
+            <p>Offer Price: NPR 35,500.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2365DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg5" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub5img1">
+                <img src="../images/Printer/L2365DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub5img2">
+                <img src="../images/Printer/L2365DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub5img3">
+                <img src="../images/Printer/L2365DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Epson EcoTank L3260 A4 Wi-Fi All-in-One Ink Tank Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 27,999.00</del></p>
+            <p>Offer Price: 24,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L3252.jpg" alt="Product Image" width="250px" height="250px" id="mainimg6" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub6img1">
+                <img src="../images/Printer/L3252.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub6img2">
+                <img src="../images/Printer/L32522.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Epson EcoTank L3252 Wi-Fi All-in-One Ink Tank Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 21,999.00</del></p>
+            <p>Offer Price: NPR 18,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/2331.jpg" alt="Product Image" width="250px" height="250px" id="mainimg7" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub7img1">
+                <img src="../images/Printer/2331.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub7img2">
+                <img src="../images/Printer/pixma2.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Canon PIXMA MegaTank G3000</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 20,999.00</del></p>
+            <p>Offer Price: NPR 17,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2321D.jpg" alt="Product Image" width="250px" height="250px" id="mainimg8" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub8img1">
+                <img src="../images/Printer/L2321D.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub8img2">
+                <img src="../images/Printer/L2321D2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub8img3">
+                <img src="../images/Printer/L2321D3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother HL-L2321D Monochrome Laser Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 22,999.00</del></p>
+            <p>Offer Price: NPR 19,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/Hp.jpg" alt="Product Image" width="250px" height="250px"
+              style="padding: 20px; box-sizing: border-box" id="mainimg9" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub9img1">
+                <img src="../images/Printer/Hp.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub9img2">
+                <img src="../images/Printer/Hp3.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub9img3">
+                <img src="../images/Printer/Hp4.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px"><b>HP Laser MFP 138fnw</b></p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 28,999.00</del></p>
+            <p>Offer Price: NPR 24,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2351DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg10" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub10img1">
+                <img src="../images/Printer/L2351DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub10img2">
+                <img src="../images/Printer/L2351DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub10img3">
+                <img src="../images/Printer/L2351DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother HL-L2351DW Monochrome Laser Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 21,999.00</del></p>
+            <p>Offer Price: NPR 18,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content"">
+              <img
+                src=" ../images/Printer/hp2.jpg" alt="Product Image" width="250px" height="250px" id="mainimg11" />
+          <div class="subimg">
+            <button class="subimg-btn" id="sub11img1">
+              <img src="../images/Printer/hp2.jpg" alt="" width="40px" />
+            </button>
+            <button class="subimg-btn" id="sub11img2">
+              <img src="../images/Printer/hp5.jpg" alt="" width="40px" />
+            </button>
+            <button class="subimg-btn" id="sub11img3">
+              <img src="../images/Printer/hp6.jpg" alt="" width="40px" />
+            </button>
+          </div>
+          <p style="margin-bottom: 5px"><b>HP Laser 1008a Printer</b></p>
+          <p style="margin-bottom: 3px"><del>Price: NPR 19,999.00</del></p>
+          <p>Offer Price: NPR 17,999.00</p>
+          <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content"">
+              <img
+                src=" ../images/Printer/pixma.jpg" alt="Product Image" width="250px" height="250px" id="mainimg12" />
+          <div class="subimg">
+            <button class="subimg-btn" id="sub12img1">
+              <img src="../images/Printer/pixma.jpg" alt="" width="40px" />
+            </button>
+            <button class="subimg-btn" id="sub12img2">
+              <img src="../images/Printer/pixma2.jpg" alt="" width="40px" />
+            </button>
+            <button class="subimg-btn" id="sub12img3">
+              <img src="../images/Printer/pixma3.jpg" alt="" width="40px" />
+            </button>
+          </div>
+          <p style="margin-bottom: 5px">
+            <b>Canon PIXMA MegaTank G2012</b>
+          </p>
+          <p style="margin-bottom: 3px"><del>Price: NPR 22,999.00</del></p>
+          <p>Offer Price: NPR 19,999.00</p>
+          <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </section>
+  <!-- hidden section of inkjet printer only -->
+  <section class="maincont" id="inkjet">
+    <table class="main-table">
+      <tr class="frow">
+        <th colspan="4">
+          <h1>Inkjet Printers</h1>
+        </th>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <div class="filter-sel" style="margin-bottom: 40px;">
+            <a href="products.html" class="resetbtn">Reset</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/t820DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg2" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub2img1">
+                <img src="../images/Printer/t820DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img2">
+                <img src="../images/Printer/t820DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img3">
+                <img src="../images/Printer/t820DW3.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub2img4">
+                <img src="../images/Printer/t820DW4.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T820DW 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 50,999.00</del></p>
+            <p>Offer Price: NPR 47,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/T420W.jpg" alt="Product Image" width="250px" height="250px" id="mainimg3" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub3img1">
+                <img src="../images/Printer/T420W.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub3img2">
+                <img src="../images/Printer/T420W2.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T420W 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 25,999.00</del></p>
+            <p>Offer Price: NPR 23,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/T720DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg4" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub4img1">
+                <img src="../images/Printer/T720DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub4img2">
+                <img src="../images/Printer/T720DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub4img3">
+                <img src="../images/Printer/T720DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother DCP T720DW 3-in-1 Inkjet Color Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 39,200.00</del></p>
+            <p>Offer Price: NPR 35,500.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2365DW.jpg" alt="Product Image" width="250px" height="250px" id="mainimg5" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub5img1">
+                <img src="../images/Printer/L2365DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub5img2">
+                <img src="../images/Printer/L2365DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub5img3">
+                <img src="../images/Printer/L2365DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Epson EcoTank L3260 A4 Wi-Fi All-in-One Ink Tank Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 27,999.00</del></p>
+            <p>Offer Price: 24,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L3252.jpg" alt="Product Image" width="250px" height="250px" id="mainimg6" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub6img1">
+                <img src="../images/Printer/L3252.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub6img2">
+                <img src="../images/Printer/L32522.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Epson EcoTank L3252 Wi-Fi All-in-One Ink Tank Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 21,999.00</del></p>
+            <p>Offer Price: NPR 18,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/2331.jpg" alt="Product Image" width="250px" height="250px" id="mainimg7" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub7img1">
+                <img src="../images/Printer/2331.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub7img2">
+                <img src="../images/Printer/pixma2.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Canon PIXMA MegaTank G3000</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 20,999.00</del></p>
+            <p>Offer Price: NPR 17,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/pixma.jpg" alt="Product Image" width="250px" height="250px" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub12img1">
+                <img src="../images/Printer/pixma.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub12img2">
+                <img src="../images/Printer/pixma2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub12img3">
+                <img src="../images/Printer/pixma3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Canon PIXMA MegaTank G2012</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 22,999.00</del></p>
+            <p>Offer Price: NPR 19,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </section>
+  <!-- hidden section of Laser printer only -->
+  <section class="maincont" id="laserprinter">
+    <table class="main-table">
+      <tr class="frow">
+        <th colspan="4">
+          <h1>Laser Printers</h1>
+        </th>
+      </tr>
+
+      <tr>
+        <td colspan="4">
+          <div class="filter-sel" style="margin-bottom: 40px;">
+            <a href="products.html" class="resetbtn">Reset</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content" id="1">
+            <img src="../images/Printer/DCP.jpg" alt="Product Image" width="250px" height="250px" id="mainimg1" />
+            <div class="subimg">
+              <button class="subimg-btn" id="subimg1">
+                <img src="../images/Printer/DCP.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="subimg2">
+                <img src="../images/Printer/DCP2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="subimg3">
+                <img src="../images/Printer/DCP3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p><b>Brother DCP L2540DW Laser Printer</b></p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 34,999.00</del></p>
+            <p>Offer Price: NPR 31,999.00</p>
+
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2321D.jpg" alt="Product Image" width="250px" height="250px" id="mainimg8" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub8img1">
+                <img src="../images/Printer/L2321D.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub8img2">
+                <img src="../images/Printer/L2321D2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub8img3">
+                <img src="../images/Printer/L2321D3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother HL-L2321D Monochrome Laser Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 22,999.00</del></p>
+            <p>Offer Price: NPR 19,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/L2351DW.jpg" alt="Product Image" width="250px" height="250px" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub10img1">
+                <img src="../images/Printer/L2351DW.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub10img2">
+                <img src="../images/Printer/L2351DW2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub10img3">
+                <img src="../images/Printer/L2351DW3.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px">
+              <b>Brother HL-L2351DW Monochrome Laser Printer</b>
+            </p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 21,999.00</del></p>
+            <p>Offer Price: NPR 18,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/hp2.jpg" alt="Product Image" width="250px" height="250px" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub11img1">
+                <img src="../images/Printer/hp2.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub11img2">
+                <img src="../images/Printer/hp5.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub11img3">
+                <img src="../images/Printer/hp6.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px"><b>HP Laser 1008a Printer</b></p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 19,999.00</del></p>
+            <p>Offer Price: NPR 17,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td>
+          <div class="main-content">
+            <img src="../images/Printer/Hp.jpg" alt="Product Image" width="250px" height="250px"
+              style="padding: 20px; box-sizing: border-box" />
+            <div class="subimg">
+              <button class="subimg-btn" id="sub9img1">
+                <img src="../images/Printer/Hp.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub9img2">
+                <img src="../images/Printer/Hp3.jpg" alt="" width="40px" />
+              </button>
+              <button class="subimg-btn" id="sub9img3">
+                <img src="../images/Printer/Hp4.jpg" alt="" width="40px" />
+              </button>
+            </div>
+            <p style="margin-bottom: 5px"><b>HP Laser MFP 138fnw</b></p>
+            <p style="margin-bottom: 3px"><del>Price: NPR 28,999.00</del></p>
+            <p>Offer Price: NPR 24,999.00</p>
+            <a href="#" onclick="alert('Added to cart')">Buy Now</a>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <hr />
+
+  <!-- Footer at the end of the page -->
+
+  <footer class="foot">
+    <h1>Printer</h1>
+    <p style="margin-bottom: 10px">&copy; All rights reserved</p>
+    <a href="https://www.instagram.com">
+      <img src="../images/socials/instagram.png" alt="" width="35px" />
+    </a>
+    <a href="https://www.facebook.com">
+      <img src="../images/socials/facebook.png" alt="" width="35px" />
+    </a>
+    <a href="https://www.gmail.com">
+      <img src="../images/socials/gmail.png" alt="" width="35px" />
+    </a>
+  </footer>
+
+  <script src="../JavaScript/product.js"></script>
+</body>
+
+</html>

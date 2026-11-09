@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research</title>
+  <link rel="stylesheet" type="text/css" href="../css/mainstyle.css" />
+  <link rel="icon" href="../images/icon-logo2.png">
+  <style>
+    .card-research {
+      padding: 16px;
+      margin: auto;
+      margin-bottom: 15px;
+      background-color: #333;
+      width: 100%;
+      max-width: 1200px;
+      border-radius: 20px;
+    }
+
+    .card-research h2 {
+      font-size: 30px;
+    }
+
+    .card-research p {
+      padding-top: 15px;
+    }
+
+    .card-research a {
+      color: rgb(94, 94, 223);
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    /* slide indicators */
+    .dot {
+      cursor: pointer;
+      height: 7px;
+      width: 19px;
+      margin: 2px;
+      background-color: grey;
+      border-radius: 3px;
+      display: inline-block;
+      transition: 0.5s ease-in-out;
+    }
+
+    .dot:hover {
+      background-color: black;
+    }
+
+    .active {
+      background-color: black;
+      width: 33px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar and the header section  -->
+  <header>
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="../images/logo.png" alt="logo.png" width="100px">
+          </a>
+        </div>
+
+        <div class="search-d">
+          <input type="text" id="search" class="search" placeholder="Search...">
+          <button type="button" id="search-btn" class="search-btn">Search</button>
+        </div>
+
+        <div class="centercont">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html" style="background-color: white; color: black;">Research</a></li>
+            <li><a href="feedback.html">About Us</a></li>
+
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <header class="header">
+      <h1 style="text-align: center">Research</h1>
+      <div class="infoSlide">
+        <div class="img-container" id="imgcontainer">
+          <img src="../images/slides/development.jpg" alt="">
+        </div>
+      </div>
+    </header>
+
+
+    <article>
+      <div class="card-research">
+        <h2>Navigation bar from Daraz</h2>
+        <a href="https://www.daraz.com.np/">Daraz.com</a>
+        <p>
+          To create the navigation bar for my website, I learned and
+          referenced the navigation bar on Daraz's website.
+        </p>
+        <br />
+        <img src="../images/research/daraz.png" alt="Screenshot of daraz's website" style="width: 100%" id="ref-img" />
+        <div id="ref-btns">
+          <button class="switch" id="switch-ref-daraz">Reference website</button>
+          <button class="switch" id="switch-our-daraz">Our Website</button>
+        </div>
+      </div>
+      <div class="card-research">
+        <h2>Cards from Canon.com</h2>
+        <a
+          href="https://in.canon/en/consumer/products/search?category=printing&subCategory=inkjet-printers">Canon.com</a>
+        <p>
+          I used the Canon's website to learn how to make a grid layout and
+          a card to hold specific items for my website.
+        </p>
+        <br />
+        <img src="../images/research/canon.png" alt="Screenshot of Canon.com website" style="width: 100%"
+          id="ref-img2" />
+        <div id="ref-btns">
+          <button class="switch" id="switch-ref-canon">Reference website</button>
+          <button class="switch" id="switch-our-canon">Our Website</button>
+        </div>
+      </div>
+      <div class="card-research">
+        <h3>Slideshow</h3>
+        <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">w3schools.com/howto/howto_js_slideshow.asp</a>
+        <p>
+          I learned how to create a Carousel on my website with the help of a
+          tutorial from W3schools.
+        </p>
+        <br />
+        <img src="../images/research/w3schools_slideshow.png" alt="Screenshot of w3school slideshow tutorial/guide"
+          style="width: 100%" id="ref-img3" />
+        <div id="ref-btns">
+          <button class="switch" id="switch-ref-slide">Reference website</button>
+          <button class="switch" id="switch-our-slide">Our Website</button>
+        </div>
+      </div>
+      <div class="card-research">
+        <h2>StackOverFlow</h2>
+        <a href="https://stackoverflow.com/">stackoverflow.com</a>
+        <p>
+          Stack Overflow, which was founded in 2008, is the largest and most
+          trusted online community for people who code to learn, share their
+          knowledge, and advance their careers. Each month, more than 50
+          million unique visitors visit Stack Overflow to get help with coding
+          problems, learn new skills, and find job opportunities.
+        </p>
+        <br />
+        <img src="../images/research/stackoverflow.png" alt="StackOverflow Screenshot" style="width: 100%" />
+      </div>
+    </article>
+  </main>
+  <hr />
+
+  <footer class="foot">
+    <h1>Printer</h1>
+    <p style="margin-bottom: 10px; text-align: center;">&copy; All rights reserved</p>
+    <a href="https://www.instagram.com">
+      <img src="../images/socials/instagram.png" alt="" width="35px" />
+    </a>
+    <a href="https://www.facebook.com">
+      <img src="../images/socials/facebook.png" alt="" width="35px" />
+    </a>
+    <a href="https://www.gmail.com">
+      <img src="../images/socials/gmail.png" alt="" width="35px" />
+    </a>
+  </footer>
+
+  <script>
+    var x = 0;
+    
+    function slideshow() {
+      var images = ['development.jpg', 'hcj.png', 'webdesign.jpg'];
+      if (x < images.length) {
+        x = x + 1;
+      }
+      else {
+        x = 1;
+      }
+      document.getElementById("imgcontainer").innerHTML = "<img src=../images/slides/" + images[x - 1] + ">";
+    }
+
+    setInterval(slideshow, 2500);
+    slideshow()
+  </script>
+  
+  <script src="../JavaScript/research.js"></script>
+
+  <body>
+
+</html>

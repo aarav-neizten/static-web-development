@@ -1,0 +1,117 @@
+* {
+    font-family: century gothic;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* styling the body */
+
+body {
+    background: #222222;
+}
+
+/* navbar and the header styling */
+
+.navbar {
+    height: 70px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 16px;
+    padding-top: 0px;
+}
+
+/* navigation buttons styling */
+
+.navbar nav ul li {
+    display: inline-block;
+}
+
+
+.navbar nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: black;
+    font-size: 25px;
+    transition: 0.5s ease;
+    color: white;
+}
+
+/* hover effect on the navigation buttons */
+
+.navbar nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* styling the search bar */
+
+.search-d {
+    display: flex;
+    gap: 0px;
+}
+
+.search {
+    width: 400px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* search bar button */
+
+.search-btn {
+    padding: 3px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+/* hover effect on the search button */
+
+.search-btn:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.4);
+}
+
+.blog-main {
+    height: 1500px;
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    color: white;
+}
+
+.main div {
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #eee;
+    background-color: #333;
+}
+
+.main div h2 {
+    text-align: center;
+}
+
+
+.foot {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    padding-bottom: 5px;
+}

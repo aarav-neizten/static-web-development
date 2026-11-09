@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/feedback.css" />
+    <link rel="icon" href="../images/icon-logo2.png" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      header h1 {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      #desc {
+        max-width: 800px;
+        margin: 2em auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #333;
+      }
+
+      .container {
+        width: 340px;
+      }
+
+      p {
+        line-height: 1.6;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <nav>
+          <div class="logo">
+            <a href="index.html">
+              <img src="../images/logo.png" alt="logo.png" width="100px" />
+            </a>
+          </div>
+
+          <div class="search-d">
+            <input
+              type="text"
+              id="search"
+              class="search"
+              placeholder="Search..."
+            />
+            <button type="button" id="search-btn" class="search-btn">
+              Search
+            </button>
+          </div>
+
+          <div class="centercont">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li>
+                <a
+                  href="feedback.html"
+                  style="background-color: white; color: black"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="feedback">
+      <div class="container">
+        <form id="form" onsubmit="formvalidate()">
+          <div class="header"><h1>Send us a feedback!</h1></div>
+          <div class="controll-input">
+            <label for="firstname">First Name:</label>
+            <input id="firstname" name="firstname" type="text" />
+          </div>
+
+          <div class="controll-input">
+            <label for="lastname">Last Name:</label>
+            <input id="lastname" name="lastname" type="text" />
+          </div>
+
+          <div class="controll-input">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div class="controll-gender">
+            <p>Gender:</p>
+            <label for="gender">Male</label>
+            <input id="gender" name="gender" type="radio" checked />
+            <label for="gender">Female</label>
+            <input id="gender" name="gender" type="radio" />
+          </div>
+
+          <div class="controll-input">
+            <p>Message:</p>
+            <textarea
+              name="Write your Feedback"
+              class="info"
+              cols="30"
+              rows="10"
+              placeholder="Write your message here"
+              id="message"
+            ></textarea>
+          </div>
+          <button type="submit">Send Feedback</button>
+        </form>
+      </div>
+      <a href="#about">About us &darr;</a>
+    </section>
+
+    <section id="about">
+      <header>
+        <h1>Shashwat Shakya</h1>
+      </header>
+
+      <section id="desc">
+        <h2>About Me</h2>
+        <p>
+          I am a student learning HTML, CSS, JavaScript and other programming
+          languages studying in Islington college Nepal. I am passionate about
+          computer science because it allows me to explore the endless
+          possibilities of technology and create innovative solutions to
+          real-world problems.
+        </p>
+      </section>
+
+      <section id="desc">
+        <h2>Projects</h2>
+        <p>Here are some of my notable projects:</p>
+        <ul>
+          <li><strong>Project 1:</strong> Description of Project 1</li>
+          <li><strong>Project 2:</strong> Description of Project 2</li>
+          <li><strong>Project 3:</strong> Description of Project 3</li>
+        </ul>
+      </section>
+      <header>
+        <h1>Suman Shrestha</h1>
+      </header>
+
+      <section id="desc">
+        <h2>About Me</h2>
+
+        <p>
+          Welcome to my portfolio! I am a passionate web developer with
+          expertise in HTML, CSS, and JavaScript. As a computer geek, I want to
+          learn more about programming and its magic, likewise studying BIT will
+          also help me get through this dreams.
+        </p>
+      </section>
+
+      <section id="desc">
+        <h2>Personal Information</h2>
+        <ul>
+          <li><strong>Contact:</strong> 9766666666</li>
+          <li><strong>Email:</strong> suman.66@gmail.com</li>
+        </ul>
+      </section>
+      <section id="desc">
+        <h2>Skills</h2>
+        <ul>
+          <li>Presentation Skills</li>
+          <li>Computer Literacy</li>
+          <li>Communation Skills</li>
+          <li>Active Listening</li>
+        </ul>
+      </section>
+      <header>
+        <h1>Shiv Pradad Sah</h1>
+      </header>
+
+      <section id="desc">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I am a passionate web developer with
+          expertise in HTML, CSS, and JavaScript.
+        </p>
+      </section>
+
+      <section id="desc">
+        <h2>Projects</h2>
+        <p>Here are some of my notable projects:</p>
+        <ul>
+          <li><strong>Project 1:</strong> Description of Project 1</li>
+          <li><strong>Project 2:</strong> Description of Project 2</li>
+          <li><strong>Project 3:</strong> Description of Project 3</li>
+        </ul>
+      </section>
+      <header>
+        <h1>Swopnil Dahal</h1>
+      </header>
+
+      <section id="desc">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I am a passionate web developer with
+          expertise in HTML, CSS, and JavaScript.
+        </p>
+      </section>
+
+      <section id="desc">
+        <h2>Projects</h2>
+        <p>Here are some of my notable projects:</p>
+        <ul>
+          <li><strong>Project 1:</strong> Description of Project 1</li>
+          <li><strong>Project 2:</strong> Description of Project 2</li>
+          <li><strong>Project 3:</strong> Description of Project 3</li>
+        </ul>
+      </section>
+    </section>
+
+    <hr />
+
+    <footer class="foot">
+      <h1 style="color: #fff">Printer</h1>
+      <p style="margin-bottom: 10px; color: #fff">&copy; All rights reserved</p>
+      <a href="https://www.instagram.com">
+        <img src="../images/socials/instagram.png" alt="" width="35px" />
+      </a>
+      <a href="https://www.facebook.com">
+        <img src="../images/socials/facebook.png" alt="" width="35px" />
+      </a>
+      <a href="https://www.gmail.com">
+        <img src="../images/socials/gmail.png" alt="" width="35px" />
+      </a>
+    </footer>
+
+    <script>
+      function formvalidate() {
+        var fname = document.getElementById("firstname").value;
+        var lname = document.getElementById("lastname").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (fname == "" || lname == "" || email == "" || message == "") {
+          alert("Empty spaces detected. Please fill out the form!");
+        } else {
+          alert("Thank you for your feedback!");
+        }
+      }
+    </script>
+  </body>
+</html>

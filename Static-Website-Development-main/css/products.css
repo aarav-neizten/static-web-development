@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: century gothic;
+}
+
+body{
+    background: #222;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar{
+    height: 70px;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding: 16px;
+    padding-top: 0px;
+}
+
+.navbar nav ul li{
+    display: inline-block;
+}
+
+
+.navbar nav ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #ddd;
+    font-size: 25px;
+    transition: 0.5s ease;
+    color: #ddd;
+}
+
+.navbar nav ul li a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.search-d{
+    display: flex;
+    gap: 0px;
+}
+
+.search{
+    width: 400px;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #ddd;
+    font-size: 20px;
+}
+.search-btn{
+    padding: 3px 10px;
+    background: transparent;
+    outline: none;
+    border: 1px solid transparent;
+    text-align: center;
+    color: #ddd;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s ease;
+}
+
+.search-btn:hover{
+    background-color: #ddd;
+    color: black;
+    box-shadow: 4px 4px 0px rgba(255,255,255,0.4);
+}
+
+.maincont{
+    display: flex;
+    align-items: first baseline;
+    justify-content: center;
+    padding-bottom: 90px;
+}
+
+.main-table{
+    margin-top: 20px;
+    width: 1500px;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.main-table tr td{
+    padding: 0px 10px 10px 0px;
+}
+
+.frow h1{
+    color: #ddd;
+    font-size: 70px;
+    margin: 0px 0px 40px 0px;
+}
+
+.main-content{
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-direction: column;
+    padding: 0px 0px 10px 0px; 
+    transition: 0.4s ease;
+    width: 250px;
+    height: 470px;
+    text-align: center;
+    transition: 0.4s ease;
+    border: 1px solid #ddd;
+}
+
+.main-content:hover{
+    transform: scale(1.05);
+}
+
+.main-content:hover{
+    box-shadow: 4px 4px 4px  rgba(0,0,0,0.4);
+}
+
+.main-content img{
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.main-content p{
+    color: #ddd;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+}
+
+.main-content a{
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s ease;
+}
+
+.main-content a:hover{
+    box-shadow: 4px 4px 0px rgba(255,255,255,0.4);
+}
+
+.filter-sel select{
+    background: transparent;
+    color: #ddd;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.filter-sel select option{
+    color: black;
+}
+
+.applybtn{
+    background-color: transparent;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.subimg{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 230px;
+    margin-bottom: 10px;
+}
+
+.subimg img{
+    margin: 0px;
+}
+
+.subimg-btn{
+    border: transparent;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.foot{
+    text-align: center;
+    color: #ddd;
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+#inkjet{
+    display: none;
+}
+
+#laserprinter{
+    display: none;
+}
+
+
+.foot{
+    text-align: center;
+    color: white;
+    padding: 30px;
+    padding-bottom: 5px;
+}
